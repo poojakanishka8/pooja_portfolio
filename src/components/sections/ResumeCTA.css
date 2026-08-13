@@ -1,0 +1,74 @@
+.resume-panel {
+  position: relative;
+  border-radius: 36px;
+  padding: 72px 40px;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--lavender) 0%, var(--pink-accent) 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+  box-shadow: var(--shadow-soft);
+}
+
+.resume-panel-glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  filter: blur(50px);
+  top: -140px;
+  right: -80px;
+}
+
+.resume-panel-dots {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 160px;
+  height: 160px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.4) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.resume-heading {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 4vw, 42px);
+  color: var(--white);
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.resume-text {
+  position: relative;
+  font-size: 16.5px;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 480px;
+  margin: 0 auto 34px;
+  line-height: 1.6;
+}
+
+.resume-actions {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resume-btn-outline {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.resume-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 560px) {
+  .resume-panel { padding: 56px 24px; }
+}
